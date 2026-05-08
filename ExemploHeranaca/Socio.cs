@@ -17,8 +17,9 @@ namespace ExemploHeranaca
         }
 
         //metodo
-        public void MostrarQtAcoes()
+        public  void MostrarQtAcoes()
         {
+            
             Console.WriteLine($"O numero de acçõs é {NumeroAcoes}");
         }
 

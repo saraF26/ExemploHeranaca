@@ -17,10 +17,12 @@
 
             f1.ExibirInformãcoes();
             socio1.ExibirInformãcoes();
-            socio2.MostrarQtAcoes();
+            //socio1.MostrarQtAcoes();
             socio2.ExibirInformãcoes();
 
-            
+            Funcionario tarefeiro = new Outsoursing("sara", 23, "Braga", 20);
+            Console.WriteLine("Exibi a infrmação de tarefeiro");
+            tarefeiro.ExibirInformãcoes();
         }
     }
 }

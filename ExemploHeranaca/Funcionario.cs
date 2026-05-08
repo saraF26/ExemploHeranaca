@@ -26,7 +26,12 @@ namespace ExemploHeranaca
         {
             Console.WriteLine($"Funcionario: {Nome}, idade: {Idade}, morada: {Morada}");
         }
-        
+        //public virtual void MostrarQtAcoes()
+        //{
+        //    Console.WriteLine("Este funcionario não tem ações");
+        //}
+
+
 
     }
 }
