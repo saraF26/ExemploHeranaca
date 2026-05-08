@@ -20,7 +20,9 @@ namespace ExemploHeranaca
         
         //Metodo
         
-        public void ExibirInformãcoes()
+        //adiconar a palavra virtual ao metodo para que este possa ser redefinido
+        //pelas classes derivadas
+        public virtual void ExibirInformãcoes()
         {
             Console.WriteLine($"Funcionario: {Nome}, idade: {Idade}, morada: {Morada}");
         }

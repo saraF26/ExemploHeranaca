@@ -21,5 +21,11 @@ namespace ExemploHeranaca
         {
             Console.WriteLine($"O numero de acçõs é {NumeroAcoes}");
         }
+
+        public override void ExibirInformãcoes()
+        {
+            base.ExibirInformãcoes();
+            Console.WriteLine($"Numero de acoes: {NumeroAcoes}");
+        }
     }
 }
