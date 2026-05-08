@@ -4,25 +4,30 @@
     {
         static void Main(string[] args)
         {
+            List<Funcionario> listaFuncionario = new List<Funcionario>();
+
             Funcionario f1 = new Funcionario("Luis", 45, "Barcelos");
-            Funcionario f2 = new Funcionario("Pedro", 24, "Braga");
+            Funcionario socio = new Socio("Pedro", 34, "Braga", 100);
+            Funcionario tarefeiro = new Outsoursing("sara", 25, "Braga", 20);
 
-            //polimorfismo de referencia
-            Funcionario socio1 = new Socio("Manuel", 35, "VilaVerde", 100);
-            //Do lado esquerdo o compilador ve socio como Funcionario
-            //new Socio-->o objeto real é do tipo Socio, 
-            //ou seja, é um Funcionario especializado (é um)
+            //adiconar á lista
 
-            Socio socio2 = new Socio("carolina", 38, "Braga", 200);
+            listaFuncionario.Add(f1);
+            listaFuncionario.Add(socio);
+            listaFuncionario.Add(tarefeiro);
 
-            f1.ExibirInformãcoes();
-            socio1.ExibirInformãcoes();
-            //socio1.MostrarQtAcoes();
-            socio2.ExibirInformãcoes();
+            foreach(Funcionario f in listaFuncionario)
+            {
+                f.ExibirInformãcoes();
+            }
 
-            Funcionario tarefeiro = new Outsoursing("sara", 23, "Braga", 20);
-            Console.WriteLine("Exibi a infrmação de tarefeiro");
-            tarefeiro.ExibirInformãcoes();
+            Socio s = new Socio("asd", 34, "brg", 500);
+            listaFuncionario.Add(s);
+            
+            foreach (Funcionario f in listaFuncionario)
+            {
+                f.ExibirInformãcoes();
+            }
         }
     }
 }
