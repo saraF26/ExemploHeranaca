@@ -19,5 +19,9 @@ namespace ExemploHeranaca
             base.ExibirInformãcoes();
             Console.WriteLine($"Trabalhou {NumeroHoras}");
         }
+        public override string ToString()
+        {
+            return base.ToString() +$" nº horas {NumeroHoras}";
+        }
     }
 }

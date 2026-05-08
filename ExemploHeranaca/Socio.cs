@@ -28,5 +28,13 @@ namespace ExemploHeranaca
             base.ExibirInformãcoes();
             Console.WriteLine($"Numero de acoes: {NumeroAcoes}");
         }
+
+        //override ToString
+
+        public override string ToString()
+        {
+            return $"Socio: {Nome}, idade: {Idade}, nº ações {NumeroAcoes}";
+        }
+        
     }
 }

@@ -30,7 +30,10 @@ namespace ExemploHeranaca
         //{
         //    Console.WriteLine("Este funcionario não tem ações");
         //}
-
+        public override string ToString()
+        {
+            return $"Funcionario: {Nome}, idade: {Idade}";
+        }
 
 
     }

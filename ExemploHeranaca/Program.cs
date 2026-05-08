@@ -28,6 +28,19 @@
             {
                 f.ExibirInformãcoes();
             }
+
+            //Metodo ToString()
+            Console.WriteLine("**********************");
+            Console.WriteLine();
+            Console.WriteLine(socio);
+            //Console.WriteLine(socio.ToString());
+            socio.ToString();
+
+            Console.WriteLine("*****LISTA COM TOSTRING*****");
+            foreach (Funcionario f in listaFuncionario)
+            {
+                Console.WriteLine(f.ToString());
+            }
         }
     }
 }
